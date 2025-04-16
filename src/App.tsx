@@ -4,6 +4,7 @@ import { Slideshow } from './components/Slideshow';
 import { Stats } from './components/Stats';
 import { Features } from './components/Features';
 import { LanguageToggle } from './components/LanguageToggle';
+import { Navigation } from './components/Navigation';
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
           <div className="text-2xl font-bold text-white">
             Brilliant Esystems
           </div>
-          <LanguageToggle />
+          <div className="flex items-center space-x-4">
+            <Navigation />
+            <LanguageToggle />
+          </div>
         </nav>
       </header>
       <main>
