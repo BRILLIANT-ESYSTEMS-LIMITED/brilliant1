@@ -2,29 +2,30 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
+// Import images using dynamic imports
 const slides = [
   {
-    image: '/src/assets/images/image_17.jpg',
+    image: new URL('../assets/images/image_17.jpg', import.meta.url).href,
     title: 'Digital Innovation Hub',
     description: 'Creating next-generation solutions for Africa\'s digital future'
   },
   {
-    image: '/src/assets/images/image_18.jpg',
+    image: new URL('../assets/images/image_18.jpg', import.meta.url).href,
     title: 'Enterprise Solutions',
     description: 'Powering businesses with cutting-edge technology'
   },
   {
-    image: '/src/assets/images/image_19.jpg',
+    image: new URL('../assets/images/image_19.jpg', import.meta.url).href,
     title: 'Government Technology',
     description: 'Transforming public services through digital excellence'
   },
   {
-    image: '/src/assets/images/image_20.jpg',
+    image: new URL('../assets/images/image_20.jpg', import.meta.url).href,
     title: 'Smart Solutions',
     description: 'Innovative technology for a smarter tomorrow'
   },
   {
-    image: '/src/assets/images/image_21.jpg',
+    image: new URL('../assets/images/image_21.jpg', import.meta.url).href,
     title: 'Digital Transformation',
     description: 'Leading the way in digital evolution'
   }
